@@ -19,8 +19,8 @@ const PdfPage = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = pdfData;
-    link.download = 'output.pdf';
-    //link.target = '_blank'; *caso queira q ele abra em outro
+    //link.download = 'output.pdf';
+    link.target = '_blank'; 
     link.click();
   };
 
